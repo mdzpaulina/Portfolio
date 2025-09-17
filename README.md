@@ -1,6 +1,8 @@
 # Paulina Méndez - Personal Portfolio
 
-This is the source code for my personal portfolio, a single-page application built with React and Tailwind CSS, and deployed on Vercel.
+This is the source code for my personal portfolio, a single-page application built with React and Tailwind CSS, and deployed on Vercel.}
+
+**Live Site:** `https://mdzpaulina.github.io/Portfolio/`
 
 ---
 ## 📖 About
