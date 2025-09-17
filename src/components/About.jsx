@@ -22,7 +22,7 @@ export const About = () => {
           </div>
         </div>
         <div className="flex justify-end items-center"> 
-            <img src="/paulina.jpeg" alt="Paulina Mendez" className="object-cover h-80 w-120 rounded-md" />
+            <img src="./paulina.jpeg" alt="Paulina Mendez" className="object-cover h-80 w-120 rounded-md" />
         </div>
       </div>
     </section>
