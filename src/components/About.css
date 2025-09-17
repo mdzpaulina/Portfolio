@@ -1,0 +1,16 @@
+.custom-list-item {
+  display: flex;
+  align-items: center; 
+  margin-bottom: 0.5rem; 
+}
+
+.custom-list-item::before {
+  content: '';
+  display: inline-block;
+  width: 20px; 
+  height: 20px; 
+  margin-right: 0.75rem; 
+  background-image: url('/star.png'); 
+  background-size: contain;
+  background-repeat: no-repeat;
+}

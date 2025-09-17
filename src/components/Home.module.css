@@ -1,0 +1,39 @@
+
+.container {
+    display: inline-block;
+    margin-top: 10vh;
+    margin-bottom: 16px;
+}
+
+.text {
+    position: relative;
+    font-size: 3em;
+    letter-spacing: 5px;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(18);
+}
+
+.text::after {
+    content: ''; 
+    position: absolute;
+    right: 0;
+    top: 15%; 
+    height: 70%; 
+    width: 3px; 
+    background: white; 
+    animation: cursor .4s step-end infinite alternate;
+}
+
+@keyframes cursor {
+    50% {
+        background-color: transparent
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
