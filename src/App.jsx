@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="bg-[#1A1B3D] min-h-screen flex flex-col "> 
       <Navbar />
-      <main className="max-w-6xl w-full px-4 mx-auto">
+      <main className="max-w-6xl w-full px-2 sm:px-4 mx-auto">
         <Home />
         <About />
         <Experience />
