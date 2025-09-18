@@ -8,7 +8,7 @@ export const Home = () => {
     <section id="home" className="flex flex-col items-center justify-center text-center min-h-screen -mt-20 px-4">
       
       <div className={styles.container}>
-        <h1 className={`${styles.text} text-white font-bold text-4xl md:text-5xl`}>
+        <h1 className={`${styles.text} text-white font-bold text-3xl sm:text-4xl md:text-6xl`}>
             Hi! I'm <span className="text-[#7BB4E3]">Paulina.</span>
         </h1>
       </div>
@@ -32,3 +32,4 @@ export const Home = () => {
     </section>
   );
 };
+

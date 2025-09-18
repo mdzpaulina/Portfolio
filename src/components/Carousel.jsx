@@ -51,31 +51,30 @@ export const Carousel = ({ initialProjects }) => {
   const currentProject = projects[currentIndex];
 
   return (
-    <div className="h-[500px] w-full max-w-4xl mx-auto relative group">
+    <div className="h-[480px] sm:h-[500px] w-full max-w-4xl mx-auto relative group">
       <div
         style={{ backgroundImage: `url(${currentProject.image})` }}
         className="w-full h-full rounded-2xl bg-center bg-cover transition-all duration-500"
       >
-        <div className="w-full h-full rounded-2xl flex flex-col justify-end p-12 bg-black/60">
+        <div className="w-full h-full rounded-2xl flex flex-col justify-end p-6 sm:p-12 bg-black/60">
           <div className="text-white text-center">
-            <h2 className="text-4xl font-bold mb-2">{currentProject.name}</h2>
-            <p className="text-lg mb-4 max-w-2xl mx-auto">{currentProject.description}</p>
-            <div className="flex justify-center items-center gap-6">
+
+            <h2 className="text-2xl sm:text-4xl font-bold mb-2">{currentProject.name}</h2>
+            <p className="text-md sm:text-lg mb-4 max-w-2xl mx-auto">{currentProject.description}</p>
+
+            <div className="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6 mt-4 mb-4">
               {currentProject.language && (
-                <span className="bg-cyan-900/70 text-cyan-300 text-sm font-semibold px-4 py-1 rounded-full">
+                <span className="bg-cyan-900/70 text-cyan-300 text-xs sm:text-sm font-semibold px-4 py-1 rounded-full">
                   {currentProject.language}
                 </span>
               )}
-              <div className="flex items-center gap-2 text-gray-300">
-                <FiStar />
-                <span>{currentProject.stargazers_count}</span>
-              </div>
-              <div className="flex gap-4">
-                <a href={currentProject.html_url} target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 transition-colors">
+              <div className="flex items-center gap-6 text-gray-300">
+                <div className="flex items-center gap-2"> 
+                  <FiStar />
+                  <span>{currentProject.stargazers_count}</span>
+                </div>
+                                <a href={currentProject.html_url} target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 transition-colors">
                   <FiGithub size={24} />
-                </a>
-                <a href={currentProject.liveUrl} target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 transition-colors">
-                  <FiExternalLink size={24} />
                 </a>
               </div>
             </div>

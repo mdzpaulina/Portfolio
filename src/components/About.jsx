@@ -3,8 +3,9 @@ import './About.css';
 
 export const About = () => {
   return (
-    <section id="about" className="py-20 px-8">
-      <h2 className="text-4xl font-bold text-white mb-8">About me</h2>
+    <section id="about" className="py-20 px-4 md:px-8">
+      <h2 className="text-4xl font-bold text-white mb-8 text-center md:text-left">About me</h2>
+
       <div className="grid md:grid-cols-2 gap-10 items-center">
         <div className="text-gray-400 text-xl tracking-wide font-light"> 
           <p>
@@ -22,7 +23,7 @@ export const About = () => {
           </div>
         </div>
         <div className="flex justify-end items-center"> 
-            <img src="./paulina.jpeg" alt="Paulina Mendez" className="object-cover h-80 w-120 rounded-md" />
+            <img src="./paulina.jpeg" alt="Paulina Mendez" className="object-cover h-64 w-100 md:h-80 md:w-120 rounded-lg" />
         </div>
       </div>
     </section>
