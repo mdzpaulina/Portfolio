@@ -7,7 +7,6 @@
 
 .text {
     position: relative;
-    font-size: 3em;
     letter-spacing: 5px;
     width: 100%;
     white-space: nowrap;
@@ -37,3 +36,4 @@
         width: 0
     }
 }
+

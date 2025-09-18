@@ -2,7 +2,13 @@
 
 .timeline-container {
   position: relative;
-  padding-left: 30px; 
+  padding-left: 15px; 
+}
+
+@media (min-width: 768px) {
+  .timeline-container {
+    padding-left: 30px; 
+  }
 }
 
 .timeline-container::before {
