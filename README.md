@@ -2,7 +2,7 @@
 
 This is the source code for my personal portfolio, a single-page application built with React and Tailwind CSS, and deployed on Vercel.}
 
-**Live Site:** `https://portfolio-222524pf7-mdzpaulinas-projects.vercel.app/`
+**Live Site:** `https://paulinamendez.com`
 
 ---
 ## 📖 About
