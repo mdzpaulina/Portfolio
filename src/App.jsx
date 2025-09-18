@@ -6,6 +6,8 @@ import { Projects } from '/src/components/Projects';
 import { Footer } from '/src/components/Footer';
 import './App.css'
 import { Experience } from './components/Experience';
+import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Analytics } from "@vercel/analytics/next"
 
 function App() {
   return (
