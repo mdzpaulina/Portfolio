@@ -5,8 +5,19 @@
     gap: 1.5rem;
 }
 
-@media (max-width: 808px) {
+.nav-title {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .nav-title {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
   .navbar-left {
     display: none; 
   }
 }
+
