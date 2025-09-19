@@ -6,19 +6,19 @@ const projectsData = [
     username: 'mdzpaulina', 
     reponame: 'coin-counter', 
     liveUrl: 'https://github.com/mdzpaulina/coin-counter',
-    image: 'https://via.placeholder.com/300x200.png?text=Coin+Counter'
+    image: './CoinCounter.png'
   },
   {
     username: 'mdzpaulina',
     reponame: 'SudokuSolver',
     liveUrl: 'https://github.com/mdzpaulina/SudokuSolver',
-    image: 'https://via.placeholder.com/300x200.png?text=Sudoku+Solver'
+    image: './SudokuSolver.png'
   },
   { 
     username: 'mdzpaulina', 
     reponame: 'PyGLCube', 
     liveUrl: 'https://github.com/mdzpaulina/PyGLCube',
-    image: 'https://via.placeholder.com/300x200.png?text=PyGLCube'
+    image: './PyGLCube.png'
   },
 ];
 
