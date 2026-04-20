@@ -2,17 +2,17 @@
 import { Carousel } from './Carousel';
 
 const projectsData = [
+    {
+    username: 'mdzpaulina',
+    reponame: 'aura',
+    liveUrl: 'https://github.com/mdzpaulina/aura',
+    image: './aura.png'
+  },
   { 
     username: 'mdzpaulina', 
     reponame: 'coin-counter', 
     liveUrl: 'https://github.com/mdzpaulina/coin-counter',
     image: './CoinCounter.png'
-  },
-  {
-    username: 'mdzpaulina',
-    reponame: 'SudokuSolver',
-    liveUrl: 'https://github.com/mdzpaulina/SudokuSolver',
-    image: './SudokuSolver.png'
   },
   { 
     username: 'mdzpaulina', 
