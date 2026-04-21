@@ -24,8 +24,8 @@ const projectsData = [
 
 export const Projects = () => {
   return (
-    <section id="projects" className="py-20 px-8">
-      <h2 className="text-4xl font-bold text-white mb-8">Projects</h2>
+    <section id="projects" className="py-20 px-8 font-ubuntu">
+      <h2 className="text-4xl font-bold text-black mb-8">Projects</h2>
       <Carousel initialProjects={projectsData} />
     </section>
   );

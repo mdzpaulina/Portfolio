@@ -17,7 +17,7 @@ const experienceData = [
 export const Experience = () => {
   return (
     <section id="experience" className="py-20 px-8">
-      <h2 className="text-4xl font-bold text-white mb-8">Experience</h2> 
+      <h2 className="text-4xl font-bold text-black mb-8">Experience</h2> 
 
       <div className="timeline-container">
         <div className="flex flex-col items-center"> 
@@ -25,16 +25,16 @@ export const Experience = () => {
             <div key={index} className="timeline-item">
               <div className="timeline-box flex-1"> 
                 
-                <h3 className="text-2xl font-bold text-white mb-2">
+                <h3 className="text-2xl font-bold text-black mb-2">
                   {item.title}
-                  <span> @ </span><span className="text-[#7BB4E3]"> {item.company}</span>
+                  <span> @ </span><span className="text-[#E8A4C4]"> {item.company}</span>
                 </h3>
                 
-                <p className="text-white font-semibold mb-2">{item.date}</p>
+                <p className="text-gray-700 font-semibold mb-2">{item.date}</p>
                 
                 <ul className="list-disc pl-5 space-y-2">
                   {item.description.map((point, i) => (
-                    <li key={i} className="text-white text-md tracking-wide font-light">
+                    <li key={i} className="text-gray-700 text-md tracking-wide font-light">
                       {point}
                     </li>
                   ))}
