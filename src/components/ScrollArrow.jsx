@@ -1,5 +1,5 @@
 // src/components/ScrollArrow.jsx
-import './ScrollArrow.css'; 
+import '../styles/ScrollArrow.css';
 
 export const ScrollArrow = () => {
   return (

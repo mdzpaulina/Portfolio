@@ -1,0 +1,66 @@
+/* --- Fixed Footer Container --- */
+.app-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 60;
+  background-color: rgba(251, 251, 252, 0.95); /* #FBFBFC at 95% opacity */
+  backdrop-filter: blur(12px);                 /* Creates the frosted glass effect */
+  -webkit-backdrop-filter: blur(12px);         /* For Safari support */
+  border-top: 2px solid rgba(235, 168, 177, 0.1);
+  padding: 1rem 2rem;
+}
+
+/* --- Inner Layout & Typography --- */
+.footer-content {
+  max-width: 80rem; /* 1280px */
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 10px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #EBA8B1;
+}
+
+/* --- Flexbox Alignments --- */
+.footer-group {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.footer-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* --- Specific Text Colors --- */
+.footer-node-text {
+  color: rgba(45, 36, 36, 0.6); /* #2D2424 at 60% opacity */
+}
+
+.footer-divider {
+  color: #2D2424;
+  opacity: 0.2;
+  display: none; /* Hidden on mobile */
+}
+
+.footer-location {
+  color: rgba(45, 36, 36, 0.6);
+  display: none; /* Hidden on mobile */
+}
+
+/* --- Responsive Breakpoint (sm: 640px) --- */
+@media (min-width: 640px) {
+  .footer-divider,
+  .footer-location {
+    display: inline;
+  }
+}

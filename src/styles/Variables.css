@@ -1,0 +1,23 @@
+/* Variables.css - Color palette and global CSS variables */
+:root {
+  /* Primary Colors */
+  --color-primary-pink: #EBA8B1;
+  --color-primary-dark: #2d2424;
+  --color-primary-light: #fbfbfc;
+  --color-accent-blue: #7bb4e3;
+  
+  /* Secondary Colors */
+  --color-gray-light: #FBFBFC;
+  --color-gray-dark: #D1D5DB;
+  --color-gray-medium: rgba(45, 36, 36, 0.8);
+  --color-gray-darker: #2D2424;
+  
+  /* Component Colors */
+  --color-card-bg: #3a3b5e;
+  --color-card-hover: #50526e;
+  --color-cyan-accent: #06b6d4;
+  --color-cyan-light: #22c5e9;
+  
+  /* Emphasis Text Color */
+  --color-emphasis: var(--color-primary-pink);
+}

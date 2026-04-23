@@ -1,11 +1,11 @@
-/* src/components/ScrollArrow.css */
-
+/* ScrollArrow.css */
 .scroll-arrow {
   position: absolute;
   bottom: 6rem; 
   left: 50%;
   transform: translateX(-50%); 
   animation: bounce 2s infinite;
+  color: var(--color-accent-blue);
 }
 
 @keyframes bounce {

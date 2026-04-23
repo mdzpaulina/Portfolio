@@ -1,0 +1,175 @@
+.logs-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-bottom: 2px solid rgba(235, 168, 177, 0.2); 
+  padding-bottom: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.logs-title {
+  font-size: 1.875rem;
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  font-style: italic;
+  color: #2D2424;
+  font-weight: 700;
+  margin: 0;
+}
+
+.logs-subtitle {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 10px;
+  color: #EBA8B1;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+/* --- Grid Layout --- */
+.hobbies-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  padding-bottom: 20rem;
+}
+
+@media (min-width: 768px) {
+  .hobbies-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* --- Hobby Cards --- */
+.hobby-card {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  border: 2px solid rgba(235, 168, 177, 0.05); /* Very light pink border */
+  transition: all 0.5s ease;
+  display: flex;
+  flex-direction: column; /* Allows us to push tags/status to the bottom */
+}
+
+.hobby-card:hover {
+  border-color: rgba(235, 168, 177, 0.2);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15); /* Soft hover shadow */
+}
+
+/* --- Card Header (Icon & Badge) --- */
+.hobby-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+.hobby-icon {
+  padding: 0.75rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hobby-icon.purple {
+  background-color: rgba(179, 157, 219, 0.1);
+  color: #B39DDB;
+}
+.hobby-icon.pink {
+  background-color: rgba(235, 168, 177, 0.1);
+  color: #EBA8B1;
+}
+
+.hobby-badge {
+  padding: 0.25rem 0.75rem;
+  background-color: #FBFBFC;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 9px;
+  font-weight: 900;
+  text-transform: uppercase;
+  border-radius: 0.375rem;
+  border: 2px solid;
+}
+.hobby-badge.purple {
+  color: #B39DDB;
+  border-color: rgba(179, 157, 219, 0.1);
+}
+.hobby-badge.pink {
+  color: #EBA8B1;
+  border-color: rgba(235, 168, 177, 0.1);
+}
+
+/* --- Card Typography --- */
+.hobby-title {
+  font-size: 1.5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -0.05em;
+  margin: 0 0 1rem 0;
+  color: #2D2424;
+}
+
+.hobby-description {
+  font-size: 0.875rem;
+  font-weight: 500;
+  opacity: 0.7;
+  line-height: 1.625;
+  margin: 0 0 2rem 0;
+  color: #2D2424;
+}
+
+/* --- Videogame Tags --- */
+.hobby-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: auto; /* Pushes to the bottom of the card */
+}
+
+.hobby-tag {
+  padding: 0.375rem 0.75rem;
+  background-color: #FBFBFC;
+  color: #2D2424;
+  font-size: 10px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border-radius: 0.375rem;
+  border: 1px solid rgba(235, 168, 177, 0.2);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  transition: border-color 0.3s ease;
+}
+
+/* When the whole card is hovered, the tag borders get slightly darker */
+.hobby-card:hover .hobby-tag {
+  border-color: rgba(235, 168, 177, 0.4);
+}
+
+/* --- Rendering Status (Art Card) --- */
+.hobby-status {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: auto;
+}
+
+.status-dot {
+  width: 0.625rem;
+  height: 0.625rem;
+  border-radius: 50%;
+  background-color: #EBA8B1;
+  animation: pulse-dot 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+.status-text {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 10px;
+  font-weight: 900;
+  color: #EBA8B1;
+  letter-spacing: 0.1em;
+}
